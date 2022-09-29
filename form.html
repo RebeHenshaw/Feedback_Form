@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>PSP 101 Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title"> PSP 101 Survey Form </h1>
+    <p id="description"> Thank you for taking the time to help us improve the PSP 101 course </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"> Your Name: 
+          <input id="name" type="text" placeholder="Enter Your Name" required type="text"/>
+        </label>
+        <label id="email-label" for"email"> Your Email: 
+          <input id="email" type="email" placeholder="Enter Your Email" required/>
+        </label>
+        <label id="number-label" for="number"> Rating of course (1-5): 
+          <input id="number" type="number" min="1" max="5" placeholder="5 is best">  
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"> Who was your favorite?
+          <select id="dropdown">
+            <option value="">Select One</option>
+            <option value="Rebecca">Rebecca</option>
+            <option value="Jasmine">Jasmine</option>
+            <option value="Jorge">Jorge</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="recommend">  
+          <input class="inline"  id="yes" type= "radio" name="recommend" value="yes"/>Yes, I would reccomend this course. 
+        </label>
+        <label for="not-recommend">  
+          <input class="inline"  id="no" type= "radio" name="recommend" value="no"/>No, I would not reccomend this course. 
+        </label>
+      </fieldset>
+      <fieldset>
+        <p> I learned: </p>
+        <label for="structure">
+          <input class="inline"  id="structure" type="checkbox" value="structure"/> Structure
+        </label>
+        <label for="problem-solving">
+          <input class="inline"  id="problem-solving" type="checkbox" value="problem-solving"/> Problem Solving
+        </label>
+        <label for="creativity">
+          <input class="inline"  id="creativity" type="checkbox" value="creativity"/> Creativity
+        </label>
+        <label for="comments"><textarea id="comments" placeholder="Please enter additional comments here"></textarea>
+      </fieldset>
+        <label for="submit"><input id="submit" type="submit" value="Submit">
+        </label>
+
+    </form>
+  </body>
+</html>
